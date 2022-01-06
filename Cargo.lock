@@ -1524,7 +1524,7 @@ dependencies = [
 [[package]]
 name = "fc-consensus"
 version = "2.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "async-trait",
  "derive_more",
@@ -1550,7 +1550,7 @@ dependencies = [
 [[package]]
 name = "fc-db"
 version = "2.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "fp-storage",
  "kvdb",
@@ -1566,7 +1566,7 @@ dependencies = [
 [[package]]
 name = "fc-mapping-sync"
 version = "2.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "fc-consensus",
  "fc-db",
@@ -1584,7 +1584,7 @@ dependencies = [
 [[package]]
 name = "fc-rpc"
 version = "2.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "ethereum",
  "ethereum-types",
@@ -1630,7 +1630,7 @@ dependencies = [
 [[package]]
 name = "fc-rpc-core"
 version = "1.1.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "ethereum",
  "ethereum-types",
@@ -1738,7 +1738,7 @@ dependencies = [
 [[package]]
 name = "fp-consensus"
 version = "2.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "ethereum",
  "parity-scale-codec",
@@ -1752,7 +1752,7 @@ dependencies = [
 [[package]]
 name = "fp-evm"
 version = "3.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "evm",
  "parity-scale-codec",
@@ -1764,7 +1764,7 @@ dependencies = [
 [[package]]
 name = "fp-rpc"
 version = "3.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "ethereum",
  "ethereum-types",
@@ -1781,7 +1781,7 @@ dependencies = [
 [[package]]
 name = "fp-self-contained"
 version = "1.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "ethereum",
  "frame-support",
@@ -1798,7 +1798,7 @@ dependencies = [
 [[package]]
 name = "fp-storage"
 version = "2.0.0"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 
 [[package]]
 name = "frame-benchmarking"
@@ -4579,7 +4579,7 @@ dependencies = [
 [[package]]
 name = "pallet-ethereum"
 version = "4.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "ethereum",
  "ethereum-types",
@@ -4620,7 +4620,7 @@ dependencies = [
 [[package]]
 name = "pallet-evm"
 version = "6.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "evm",
  "evm-gasometer",
@@ -4648,7 +4648,7 @@ dependencies = [
 [[package]]
 name = "pallet-evm-precompile-blake2"
 version = "2.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "fp-evm",
  "sp-core",
@@ -4658,7 +4658,7 @@ dependencies = [
 [[package]]
 name = "pallet-evm-precompile-bn128"
 version = "2.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "fp-evm",
  "sp-core",
@@ -4669,7 +4669,7 @@ dependencies = [
 [[package]]
 name = "pallet-evm-precompile-dispatch"
 version = "2.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "fp-evm",
  "frame-support",
@@ -4682,7 +4682,7 @@ dependencies = [
 [[package]]
 name = "pallet-evm-precompile-modexp"
 version = "2.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "fp-evm",
  "num",
@@ -4693,7 +4693,7 @@ dependencies = [
 [[package]]
 name = "pallet-evm-precompile-sha3fips"
 version = "2.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "fp-evm",
  "sp-core",
@@ -4704,7 +4704,7 @@ dependencies = [
 [[package]]
 name = "pallet-evm-precompile-simple"
 version = "2.0.0-dev"
-source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#760bbf8e2109bd69263ab14129cf5297d63a7c05"
+source = "git+https://github.com/nftt-studio/frontier.git?branch=moonbeam-polkadot-v0.9.13#57ee2ead30d726beb53fd552de9852c03fe87749"
 dependencies = [
  "fp-evm",
  "ripemd160",

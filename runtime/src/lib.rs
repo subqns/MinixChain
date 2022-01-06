@@ -423,6 +423,10 @@ impl FeeCalculator for FixedGasPrice {
 
 impl pallet_ethereum_chain_id::Config for Runtime {}
 
+parameter_types! {
+    pub const TokenDecimals: u8 = 8;
+}
+
 impl pallet_evm::Config for Runtime {
     type FeeCalculator = FixedGasPrice;
     type GasWeightMapping = MinixGasWeightMapping;
@@ -431,6 +435,7 @@ impl pallet_evm::Config for Runtime {
     type WithdrawOrigin = EnsureAddressNever<AccountId>;
     type AddressMapping = HashedAddressMapping<BlakeTwo256>;
     type Currency = Balances;
+    type TokenDecimals = TokenDecimals;
     type Event = Event;
     type Runner = pallet_evm::runner::stack::Runner<Self>;
     type PrecompilesType = MinixPrecompiles<Runtime>;
