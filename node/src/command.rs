@@ -18,7 +18,7 @@
 use crate::cli::{Cli, Subcommand};
 use crate::{chain_spec, service};
 use minix_runtime::Block;
-use sc_cli::{ChainSpec, Role, RuntimeVersion, SubstrateCli};
+use sc_cli::{ChainSpec, RuntimeVersion, SubstrateCli};
 use sc_service::PartialComponents;
 
 impl SubstrateCli for Cli {
@@ -65,17 +65,17 @@ impl SubstrateCli for Cli {
                     }
             },
             "testnet" => {
-                set_default_ss58_version(Ss58AddressFormat::ChainXAccount);
+                set_default_ss58_version(Ss58AddressFormat::custom(minix_runtime::SS58Prefix::get() as u16));
 
                 Box::new(chain_spec::live_testnet_config()?)
             }
             "minix" => {
-                set_default_ss58_version(Ss58AddressFormat::ChainXAccount);
+                set_default_ss58_version(Ss58AddressFormat::custom(minix_runtime::SS58Prefix::get() as u16));
 
                 Box::new(chain_spec::live_mainnet_config()?)
             }
             "dev-evm" => {
-                set_default_ss58_version(Ss58AddressFormat::ChainXAccount);
+                set_default_ss58_version(Ss58AddressFormat::custom(minix_runtime::SS58Prefix::get() as u16));
 
                 Box::new(chain_spec::dev_evm_config()?)
             }
@@ -84,7 +84,7 @@ impl SubstrateCli for Cli {
                 use std::fs::File;
                 use std::io::Read;
 
-                set_default_ss58_version(Ss58AddressFormat::ChainXAccount);
+                set_default_ss58_version(Ss58AddressFormat::custom(minix_runtime::SS58Prefix::get() as u16));
 
                 let mut bytes: Vec<u8> = Vec::new();
                 let mut file = File::open(&std::path::PathBuf::from(path))
@@ -201,11 +201,7 @@ pub fn run() -> sc_cli::Result<()> {
         None => {
             let runner = cli.create_runner(&cli.run)?;
             runner.run_node_until_exit(|config| async move {
-                match config.role {
-                    Role::Light => service::new_light(config),
-                    _ => service::new_full(config),
-                }
-                .map_err(sc_cli::Error::Service)
+                service::new_full(config).map_err(sc_cli::Error::Service)
             })
         }
     }

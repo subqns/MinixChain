@@ -5,7 +5,7 @@
 
 #![warn(missing_docs)]
 
-use std::sync::Arc;
+use std::sync::{Arc, Mutex};
 
 use minix_runtime::{opaque::Block, AccountId, Balance, Index};
 pub use sc_rpc_api::DenyUnsafe;
@@ -25,6 +25,7 @@ use sc_client_api::{
 };
 use sc_transaction_pool::{ChainApi, Pool};
 use fc_rpc_core::types::FilterPool;
+use fc_rpc_core::types::FeeHistoryCache;
 use jsonrpc_pubsub::manager::SubscriptionManager;
 use pallet_ethereum::EthereumStorageSchema;
 use fc_rpc::{
@@ -134,6 +135,10 @@ pub fn create_full<C, P, BE, A>(
 
         let block_data_cache = Arc::new(EthBlockDataCache::new(50, 50));
 
+        let fee_history_limit = 2048;
+
+        let fee_history_cache: FeeHistoryCache = Arc::new(Mutex::new(BTreeMap::new()));
+
         io.extend_with(
             EthApiServer::to_delegate(EthApi::new(
                 client.clone(),
@@ -148,6 +153,8 @@ pub fn create_full<C, P, BE, A>(
                 max_past_logs,
                 block_data_cache.clone(),
                 fc_rpc::format::Legacy,
+                fee_history_limit,
+                fee_history_cache,
             ))
         );
 

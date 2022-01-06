@@ -13,35 +13,35 @@ hex-literal = { version = "0.3.1", optional = true }
 scale-info = { version = "1.0.0", default-features = false, features = ["derive"] }
 smallvec = "1.7.0"
 
-sp-api = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-sp-block-builder = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-sp-consensus-aura = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-sp-core = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-sp-inherents = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-sp-offchain = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-sp-runtime = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-sp-session = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-sp-std = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-sp-transaction-pool = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-sp-version = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
+sp-api = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+sp-block-builder = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+sp-consensus-aura = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+sp-core = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+sp-inherents = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+sp-offchain = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+sp-runtime = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+sp-session = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+sp-std = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+sp-transaction-pool = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+sp-version = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
 
-frame-executive = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-frame-support = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-frame-system = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
+frame-executive = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+frame-support = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+frame-system = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
 # Used for runtime benchmarking
-frame-benchmarking = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false, optional = true }
-frame-system-benchmarking = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false, optional = true }
+frame-benchmarking = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false, optional = true }
+frame-system-benchmarking = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false, optional = true }
 # Used for the node template's RPCs
-frame-system-rpc-runtime-api = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
+frame-system-rpc-runtime-api = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
 
-pallet-aura = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-pallet-balances = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-pallet-grandpa = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-pallet-sudo = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-pallet-timestamp = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-pallet-transaction-payment = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-pallet-transaction-payment-rpc-runtime-api = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
-pallet-utility = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11", default-features = false }
+pallet-aura = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+pallet-balances = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+pallet-grandpa = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+pallet-sudo = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+pallet-timestamp = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+pallet-transaction-payment = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+pallet-transaction-payment-rpc-runtime-api = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+pallet-utility = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13", default-features = false }
 
 # Minix
 pallet-coming-id = { default-features = false, path = "../pallets/pallet-coming-id" }
@@ -57,24 +57,24 @@ pallet-assets-bridge = { default-features = false, path = "../pallets/assets-bri
 # Evm
 pallet-ethereum-chain-id = { default-features = false, path = "../pallets/ethereum-chain-id" }
 pallet-deposit = { default-features = false, path = "../pallets/deposit" }
-pallet-evm = { git = "https://github.com/chainx-org/frontier", branch = "new-polkadot-v0.9.11", default-features = false }
-pallet-ethereum = { git = "https://github.com/chainx-org/frontier", branch = "new-polkadot-v0.9.11", default-features = false }
+pallet-evm = { git = "https://github.com/nftt-studio/frontier.git", branch = "moonbeam-polkadot-v0.9.13", default-features = false }
+pallet-ethereum = { git = "https://github.com/nftt-studio/frontier.git", branch = "moonbeam-polkadot-v0.9.13", default-features = false }
 
 # EVM precompile
-fp-evm = { git="https://github.com/chainx-org/frontier", default-features=false, branch="new-polkadot-v0.9.11" }
-pallet-evm-precompile-bn128 = { git = "https://github.com/chainx-org/frontier", default-features=false, branch="new-polkadot-v0.9.11" }
-pallet-evm-precompile-dispatch = { git = "https://github.com/chainx-org/frontier", default-features=false, branch="new-polkadot-v0.9.11" }
-pallet-evm-precompile-modexp = { git = "https://github.com/chainx-org/frontier", default-features=false, branch="new-polkadot-v0.9.11" }
-pallet-evm-precompile-simple = { git = "https://github.com/chainx-org/frontier", default-features=false, branch="new-polkadot-v0.9.11" }
-pallet-evm-precompile-sha3fips = { git = "https://github.com/chainx-org/frontier", default-features=false, branch="new-polkadot-v0.9.11" }
-pallet-evm-precompile-blake2 = { git = "https://github.com/chainx-org/frontier", default-features=false, branch="new-polkadot-v0.9.11" }
+fp-evm = { git="https://github.com/nftt-studio/frontier.git", default-features=false, branch="moonbeam-polkadot-v0.9.13" }
+pallet-evm-precompile-bn128 = { git = "https://github.com/nftt-studio/frontier.git", default-features=false, branch="moonbeam-polkadot-v0.9.13" }
+pallet-evm-precompile-dispatch = { git = "https://github.com/nftt-studio/frontier.git", default-features=false, branch="moonbeam-polkadot-v0.9.13" }
+pallet-evm-precompile-modexp = { git = "https://github.com/nftt-studio/frontier.git", default-features=false, branch="moonbeam-polkadot-v0.9.13" }
+pallet-evm-precompile-simple = { git = "https://github.com/nftt-studio/frontier.git", default-features=false, branch="moonbeam-polkadot-v0.9.13" }
+pallet-evm-precompile-sha3fips = { git = "https://github.com/nftt-studio/frontier.git", default-features=false, branch="moonbeam-polkadot-v0.9.13" }
+pallet-evm-precompile-blake2 = { git = "https://github.com/nftt-studio/frontier.git", default-features=false, branch="moonbeam-polkadot-v0.9.13" }
 
 # ETH API
-fp-rpc = { git="https://github.com/chainx-org/frontier", default-features=false, branch="new-polkadot-v0.9.11" }
-fp-self-contained  = { git="https://github.com/chainx-org/frontier", default-features=false, branch="new-polkadot-v0.9.11" }
+fp-rpc = { git="https://github.com/nftt-studio/frontier.git", default-features=false, branch="moonbeam-polkadot-v0.9.13" }
+fp-self-contained  = { git="https://github.com/nftt-studio/frontier.git", default-features=false, branch="moonbeam-polkadot-v0.9.13" }
 
 [build-dependencies]
-substrate-wasm-builder = { git = 'https://github.com/paritytech/substrate', branch = "polkadot-v0.9.11" }
+substrate-wasm-builder = { git = 'https://github.com/purestake/substrate.git', branch = "moonbeam-polkadot-v0.9.13" }
 
 [features]
 default = ["std"]

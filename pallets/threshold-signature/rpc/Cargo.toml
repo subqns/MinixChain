@@ -13,11 +13,11 @@ jsonrpc-core-client = "18.0.0"
 jsonrpc-derive = "18.0.0"
 hex = "0.4.3"
 
-sp-std = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.11" }
-sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.11" }
-sp-rpc = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.11" }
-sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.11" }
-sp-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.11" }
+sp-std = { git = "https://github.com/purestake/substrate.git", branch = "moonbeam-polkadot-v0.9.13" }
+sp-blockchain = { git = "https://github.com/purestake/substrate.git", branch = "moonbeam-polkadot-v0.9.13" }
+sp-rpc = { git = "https://github.com/purestake/substrate.git", branch = "moonbeam-polkadot-v0.9.13" }
+sp-runtime = { git = "https://github.com/purestake/substrate.git", branch = "moonbeam-polkadot-v0.9.13" }
+sp-api = { git = "https://github.com/purestake/substrate.git", branch = "moonbeam-polkadot-v0.9.13" }
 
 pallet-threshold-signature-rpc-runtime-api = { path = "./runtime-api" }
 
